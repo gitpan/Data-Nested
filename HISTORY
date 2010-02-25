@@ -1,0 +1,84 @@
+########################################################################
+# HISTORY
+########################################################################
+
+Data::NDS
+=========
+
+Version 1.00   2008-02-27
+   Initial release
+
+Version 1.01   2008-05-05
+   Fixed bug where merge ignored the $new=1 arg. Ashley Hindmarsh
+   Added identical and contains methods
+   keys and values now only return non-empty elements
+   Added value method
+   Added default and override rulesets
+   Added ruleset_valid method
+   Added which method
+   Added lots of examples to manual
+   Added Build.PL and several other things to meet requirements on
+      http://cpants.perl.org/
+
+Version 1.02  2008-05-08
+   Additional changes to meet requirements on http://cpants.perl.org/
+   Speedups.
+
+Version 1.03  2008-05-09
+   Final changes to meet requirements on http://cpants.perl.org/
+   Bug fix so it won't fail with "Too early to specify a build action"
+
+Version 1.04  2008-06-12
+   Added check_value method
+   Added print method
+   Added "keys" to get_structure functionality
+   Explicitly defined each method as working with the actual structure,
+     or with a copy of the structure.
+
+Version 1.05  2008-06-19
+   Fixed a bug in merging
+
+Version 3.00  2009-03-02
+   NOTE: jumped versions to synchronize Data::NDS modules
+   Backwards incompatible rethink of the module.
+   Almost all functions have changed slightly (different error codes,
+      different return values).
+
+Version 3.10  2009-04-14
+   Some docs imporovments prompted by Michael
+   Added test_conditions method (previously an internal only part of
+      the Multiele module).
+
+Version 3.11  2010-02-25
+   Renamed the module to Data::Nested .  3.11 is the final version of
+      Data::NDS .
+
+Data::Nested
+============
+
+Version 3.11  2010-02-25
+   Renamed the module Data::NDS to Data::Nested .  3.11 is the final
+      version of Data::NDS and the first version of Data::Nested .
+
+Version 3.12
+
+########################################################################
+# BACKWARDS INCOMPATIBILITIES
+########################################################################
+
+Version 3.00
+   *** NOTE ***
+   Version 3.00 is a complete rethink/rewrite of the module. Based on
+   real-life use of the module, a number of changes were made to
+   make the module easier to use and more consistent internally.
+   I will not make such a major change again.
+
+Version 3.10
+   The API of the 3.10 series is backward compatible with 3.00, but
+   due to changes in the internals, the 3.10 Data::NDS module is
+   required for the 3.10 version of other Data::NDS::* modules.
+
+Version 3.11
+   Renamed the module at the suggestion of the perl module list
+   maintainers.
+
