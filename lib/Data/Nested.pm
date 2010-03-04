@@ -40,7 +40,7 @@ use IO::File;
 use warnings;
 
 use vars qw($VERSION);
-$VERSION = "3.11";
+$VERSION = "3.12";
 
 use vars qw($_DBG $_DBG_INDENT $_DBG_OUTPUT $_DBG_FH $_DBG_POINT);
 $_DBG        = 0;

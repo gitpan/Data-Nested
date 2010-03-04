@@ -7,6 +7,7 @@ my %requires = (
                  'Algorithm::Permute'       => '0',
                  'IO::File'                 => '0',
                  'Storable'                 => '0',
+                 'YAML::Syck'               => '0',
                );
 my %build_mods = (
                  'Test::More'               => '0',
@@ -17,7 +18,7 @@ my %build_mods = (
 
 my $build = Module::Build->new(
         license            => 'perl',
-        dist_version       => '3.11',
+        dist_version       => '3.12',
         dist_author        => 'Sullivan Beck <sbeck@cpan.org>',
         module_name        => 'Data::Nested',
         dist_abstract      => 'routines to work with a perl nested data structure',
